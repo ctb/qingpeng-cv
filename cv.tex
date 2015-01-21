@@ -1,0 +1,260 @@
+
+%________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Qingpeng Zhang
+% @author   Qingpeng Zhang
+% @date     Nov 2014
+% @info     Based on Latex Resume Template by Chris Paciorek 
+%           http://www.stat.berkeley.edu/~paciorek/computingTips/Latex_template_creating_CV_.html
+
+
+
+\documentclass[margin,line]{res}
+\usepackage{hyperref}
+\usepackage{url}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{Qingpeng Zhang \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{3in}p{3in}}
+Department of Computer Science and Engineering  & {\it Phone:}  (678) 901-9911 \\            
+Michigan State University & {\it E-mail:} \url{qingpeng@msu.edu} \\       
+428 S. Shaw Ln., RM 3115 & {\it Web:} \url{http://www.cse.msu.edu/~qingpeng/} \\ 
+East Lansing, MI  48824 USA  & {\it Twitter:} \href{http://twitter.com/qingpengzhang}{@qingpengzhang}\\     
+\end{tabular}
+
+
+\section{\sc Research Interests}
+
+Broadly my research interest is developing and applying scalable computational tools to enable investigations of large, complex biological dataset.
+
+My dissertation developed approaches to investigate the diversity of various complex metagenomic samples based on k-mer counting algorithms.  
+
+\section{\sc Education}
+{\bf Michigan State University}, {\em Department of Computer Science and 
+Engineering,} East Lansing, USA\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] Ph.D. Candidate, Computer Science and Quantitative Biology (Dual Major)
+\begin{list2}
+\vspace*{.05in}
+    \item Dissertation Topic:  ``A Novel Computational Approach to Investigate
+    Microbial Diversity using Whole-genome Shotgun Metagenomic Data'' 
+    \item Advisor:  C. Titus Brown
+    \item Anticipated Graduation Spring 2015
+\end{list2}
+\end{list1}
+
+{\bf Nanjing University}, {\em Department of Physics,} Nanjing, China\\
+\vspace*{-.1in}
+\begin{list1}
+\item[] B.S., Physics (Biophysics),  July, 2003
+\end{list1}
+
+
+\section{\sc Research Experience}
+{\bf Michigan State University}, Department of Computer Science and 
+Engineering, East Lansing, USA
+
+{\em Graduate Research Assistant} in GED Lab (Advisor: C. Titus Brown),
+\hfill {\bf August, 2008 - present}
+
+\begin{list2}
+
+    \item developed an efficient k-mer counting software package – 
+    khmer. [1]
+    \item developed digital normalization approach for scaling shotgun seq analysis [2]
+    \item investigated the genomic versatility and functional variation 
+    between two heterotrophic symbionts of deep-sea Osedax worms. [3]
+    \item the development of novel methods required for diversity measurement 
+    of extremely large metagenomics samples. [Manuscript in preparation]
+\end{list2}
+
+{\bf Chinese Academy of Sciences}, Institute of Genetics and Developmental 
+Biology, Beijing, China
+
+{\em Research Staff in Bioinformatics} in Han Lab (Advisor: Jing-Dong Jackie 
+Han), \hfill {\bf May, 2005 - July, 2008}
+
+\begin{list2}
+
+    \item identified the proliferation/differentiation switch in the 
+    cellular network of multicellular organisms. [5]
+    \item investigated the regulatory circuitry of aging. [4]
+    \item identified microRNA/siRNA in human intron region using 
+    Bayesian classifier.
+\end{list2}
+
+{\bf BGI-Beijing}, Bioinformatics Department, Beijing, China
+
+{\em Research Staff in Bioinformatics} \hfill {\bf July, 2003 - May, 2005}
+
+\begin{list2}
+
+    \item silkworm genome sequencing project as core member of the genomic 
+    analysis group. [7]
+    \item assembled and analyzed deer BAC clones. [6]
+\end{list2}
+
+\section{\sc Publications}
+
+{\em up-to-date publication list at: http://scholar.google.com/citations?user=3TddZSQAAAAJ}\\
+
+\begin{enumerate}
+
+\item {\em These are not the k-mers you are looking for: efficient online 
+k-mer counting using a probabilistic data structure.} {\bf Qingpeng Zhang}, Jason Pell, Rosangela Canino-Koning, Adina Chuang Howe, C. 
+Titus Brown. PLOS ONE, July 25, 2014, 
+\href{http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0101271}{DOI: 10.1371/journal.pone.0101271}
+
+\item {\em A Reference-Free Algorithm for Computational Normalization of Shotgun 
+Sequencing Data.} C. Titus Brown, Adina Howe, {\bf Qingpeng Zhang}, Alexis B. Pyrkosz, Timothy H. 
+Brom.  submitted. http://arxiv.org/abs/1203.4802
+
+\item {\em Genomic versatility and functional variation between two dominant 
+heterotrophic symbionts of deep-sea Osedax worms.} Shana K Goffredi, Hana Yi, 
+{\bf Qingpeng Zhang}, Jane E Klann, Isabelle A Struve, Robert C Vrijenhoek and 
+C Titus Brown. The ISME Journal , (14 November 2013) | 
+doi:10.1038/ismej.2013.201
+
+\item {\em A Modular Network Model of Aging.} Xue H, Xian B, Dong D, Xia K, Zhu S, 
+Zhang Z, Hou L, {\bf Zhang Q}, Zhang Y, Han J-D J.  Molecular Systems 
+Biology, 2007, 3: 147.
+
+\item {\em Identification of the Proliferation/Differentiation Switch in the 
+Cellular Network of Multicellular Organisms.} Kai Xia, Huiling 
+Xue, Dong Dong, Shanshan Zhu, Jiamu Wang, {\bf Qingpeng Zhang}, 
+Lei Hou, Hua Chen, Ran Tao, Zheng Huang, Zheng Fu, Ye-Guang Chen, and 
+Jing-Dong J Han PLoS Comput Biol. 2006 Nov 24;2(11):e145
+
+\item {\em Comparative genomic analysis links karyotypic evolution with genomic 
+evolution in the Indian Muntjac (Muntiacus muntjak vaginalis).} Qi Zhou, 
+Ling Huang, Jianguo Zhang, Xiangyi Zhao, {\bf Qingpeng Zhang}, Fei Song, 
+Jianxiang Chi, Fengtang Yang and Wen Wang Chromosoma. 
+2006 Dec;115(6):427-436. Epub 2006 Jun 22.
+
+\item {\em A Draft Sequence for the Genome of the Domesticated Silkworm (Bombyx mori)
+} Science. 2004 Dec 10;306(5703):1937-40 (list author)
+
+\end{enumerate}
+
+\section{\sc Conference Presentations}
+\begin{list2}
+\item {\em A probabilistic approach to k-mer counting.} Annual Bioinformatics Open 
+Source Conference (BOSC2012) July 2012, Long Beach, USA
+\end{list2}
+
+
+\section{\sc Teaching Experience}
+
+\begin{list2}
+
+\item Teaching Assistant of EDAMAME Workshop - Explorations in Data Analyses for Metagenomic Advances in Microbial Ecology, Kellogg Biological Station, Michigan State University, August 2014
+\item Teaching Assistant of MSU NGS Summer Course - Analyzing Next-Generation Sequencing Data, Kellogg Biological Station, Michigan State University, August 2014
+\item Instructor of Software Carpentry Workshop at Wuhan Institute of Virology, Chinese Academy of Sciences, China, July 2013
+\item Teaching Assistant of Software Carpentry Workshop at The Scripps Research Institute, La Jolla, CA, November 2012
+\item Teaching Assistant of MSU NGS Summer Course - Analyzing Next-Generation Sequencing Data, Kellogg Biological Station, Michigan State University, June 2012
+\item Teaching Assistant of CSE491 - Introduction to Database-Backed Web Development, Department of Computer Science and Engineering, Michigan State University, 2008 Fall, 2012 Spring
+\item Teaching Assistant of CSE231 - Introduction to Programming I -Python, Department of Computer Science and Engineering, Michigan State University, 2010 Spring, 2010 Fall, 2011 Spring, 2012 Fall, 2013 Spring
+
+\end{list2}
+
+\section{\sc Professional Training}
+
+\begin{list1}
+
+\item[] Selected Courses (at Michigan State University)
+
+\begin{list1}
+\vspace*{.05in}
+\item[]  CSE 824 Advanced Computer Networks and Communications
+\item[]  CSE 830 Design and Theory of Algorithms
+\item[]  CSE 847 Machine Learning
+\item[]  CSE 860 Foundations of Computing
+\item[]  CSE 881 Data Mining
+\item[]  CSE 891 Probabilistic Models and Algorithms in Computational Biology
+\item[]  CSE 891 Open Problems in Bioinformatics
+\item[]  QB 826 Introduction to Quantitative Biology Techniques
+\item[]  QB 827 Problems in Quantitative Biology
+\item[]  QB 828 Biology for the Interdisciplinary Scientist
+\item[]  MMG 890 Environmental Metagenomics
+
+\end{list1}
+\vspace*{.1in}
+
+\item[] Workshops and Conferences (as attendee or poster presenter)
+
+\begin{list1}
+\vspace*{.05in}
+\item[]  2014.10 The 6th Annual Argonne Soil Metagenomics Meeting, Chicago, IL, USA
+\item[]  2014.04 Software Carpentry Instructor Training Workshop, Toronto, Canada
+\item[]  2014.04 PyCon2014, Montreal, Canada
+\item[]  2012.07 Annual Bioinformatics Open Source Conference (BOSC2012) Long Beach, CA, USA
+\item[]  2012.07 20th Annual International Conference on Intelligent Systems for Molecular Biology (ISMB2012) Long Beach, CA, USA
+\item[]  2012.05 Great Lakes Bioinformatics Conference 2012 (GLBIO2012) Ann Arbor, MI, USA
+\item[]  2012.05 Frontiers in Metagenomics Symposium, Columbia, MO, USA
+\item[]  2011.06 The First International Earth Microbiome Project Conference, Shenzhen, China
+\item[]  2010.05 Certification in College Teaching Institute, East Lansing, MI, USA
+\item[]  2009.05 Google Developer Days 2009, Beijing, China
+\item[]  2007.03 International Networking for Young Scientists (INYS) Workshop on computational biology, Beijing, China 
+\item[]  2006.10 International Conference on Genomics, Hangzhou, China
+
+\end{list1}
+\end{list1}
+
+
+\section{\sc Honors and Awards} 
+
+\begin{list1}
+
+\item[] 2009-2014 CSE Summer Research Fellowship, Michigan State University
+\item[] 2008 Quantitative Biology(QB) Recruiting Fellowship, Michigan State University
+\item[] 2003 Honored Graduate Award, Nanjing University (3\% of all graduates) 
+\item[] 1999-2001 Scholarship for Annually Excellent Student, Nanjing University (20\% of all students) 
+\item[] 1999 First Grade Scholarship for Freshman, Nanjing University (5\% of all freshmen)
+
+\end{list1}
+
+
+\section{\sc References} 
+
+{\em ( Contact details available upon request.)}
+
+Dr. C. Titus Brown, Associate Professor, University of California, Davis, ctbrown@ucdavis.edu
+
+Dr. James Cole, Assistant Professor, Michigan State University, colej@msu.edu 
+
+Dr. Adina Chuang Howe, Assistant Professor, Iowa State University, achuang@engineering.uiowa.edu
+
+\end{resume}
+\end{document}
+
+
+
+

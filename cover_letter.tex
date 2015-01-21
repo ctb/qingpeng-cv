@@ -1,0 +1,76 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{url}
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Qingpeng}{Zhang}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{Department of Computer Science and Engineering}{Michigan State University}{East Lansing, MI 48824}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(678)~901~9911}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{qingpeng@msu.edu}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0pt]{picture.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{DOE Joint Genome Institute}{2800 Mitchell Drive\\Walnut Creek, CA 94598}
+\date{November 06, 2014}
+\opening{Dear Search Committee,}
+\closing{Sincerely,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am excited to apply for the Simons Institute Postdoc- Bioinformaticist Postdoc Fellow position at JGI (JobID:80367).  I am strongly interested in developing and applying computational methods to guide large scale efforts of using sequencing technologies as a tool to answer biological questions.  I have more than ten years of experience in bioinformatics and have been working with metagenomic data as part of my PhD.  I specialize in developing scalable tools for processing and analyzing complex shotgun metagenomes. Currently, I am a graduate student in Dr. C. Titus Brown's group at Michigan State University and expect to receive my doctorate this May.  
+
+In the past several years, I have helped starting and participated in an effort to develop an efficient k-mer counting software package based on a probabilistic data structure, Count-Min Sketch  (\url{https://github.com/ged-lab/khmer}) with C. Titus Brown. We also put a lot of effort into making the khmer paper reproducible with an automatic pipeline (\url{https://github.com/ged-lab/2013-khmer-counting}). This software package has been applied to study the diversity of multiple metagenomic datasets, including the Great Prairie Grand Challenge, a collaboration with the JGI. Based on the work on khmer, I also helped developing digital normalization,  a single-pass computational algorithm to discard redundant shotgun sequencing data to enable more efficient analysis. Specifically, I integrate efficient k-mer counting and read coverage analysis based on digital normalization to generate abundance profiles across multiple datasets, allowing for scalable diversity analysis of large, complex metagenomes without the need for assembly or reference sequences.   I have evaluated this method on multiple metagenomes from a variety of environments (e.g., human gut, soil in collaboration with James Tiedje, ballast water viromes in collaboration with Joan Rose ). Going forward, I plan to extend the application of this method on binning approaches, functional annotation, and phylogenetic analysis for metagenomic analysis. Given the velocity in growth of sequencing data, I believe that this method is promising to highly diverse samples with relatively low computational requirements. Further, as they do not depend on reference genomes, these methods also provide opportunities to tackle the large amounts of unknown "dark matter" we find in metagenomic datasets.
+
+I have an extensive history of working with sequencing data (since 2003).  Previously, I worked at the Beijing Genomics Institute (BGI) where I participated in genome sequencing projects and later on systems biology such as regulatory network analysis and microRNA prediction. These experiences, combined with my PhD research and my dual major in computer science and quantitative biology, have given me a strong background in bioinformatics, molecular biology, and genomics.  I enjoy interacting with a variety of collaborators, including biologists, statisticians, bioinformaticians, and software engineers. 
+
+My collaboration with the JGI has introduced me to the breadth of projects on-going, the diverse datasets to analyze, the broad biological questions to answer at the JGI. With the support of the Simons Fellowship and the participation of the semester-long program in Algorithmic Challenges in Genomics at Simons Institute, I will get exposed to the recent exciting progress  of bioinformatics algorithms development and get the chance to work with many experts in different fields. I believe all these opportunities will facilitate my work at JGI considerably.  All these reinforce my impression that working at JGI will offer me numerous opportunities to pursue my passion, which is to apply my skills and knowledge in computing to answer scientific questions.  I am greatly enthusiastic about the possibility of contributing my skills and knowledge to facilitate the scientific mission of the JGI as well as the Simons Institute. I have attached my CV for your review. I would greatly appreciate the opportunity to talk to you more about the position. Please do not hesitate to contact me with any questions.
+
+
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
