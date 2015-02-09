@@ -42,21 +42,21 @@
 
 
  Species diversity is an important measurement of ecological communities. Scientists 
-believe that there is relationship between species diversity and ecosystem processes.
- In almost all the metagenomics projects, diversity analysis plays an important role to supply information 
+believe that there is a strong relationship between species diversity and ecosystem processes.
+ In almost all metagenomics projects, diversity analysis plays an important role in supplying information 
  about the richness of species, the species abundance
-distribution in a sample or the similarity and difference between different 
-samples, all of which are crucial to draw insightful and reliable conclusion. Since we have limited
- sequencing power and other financial strain, the resulting metagenomics data set from 
- high diversity sample like soil only corresponds to a tiny fraction of the actual genomic
- content in the sample. The large size of data set and the low coverage make the assessment of microbial 
- diversity of high diversity sample even harder. With the novel applications of data structures and the development 
+distribution in a sample, and the similarity/difference between 
+samples, all of which are crucial to draw insightful and reliable conclusions. Since we have limited
+ sequencing power and financial constraints, the metagenomics data sets from 
+ high diversity samples like soil only correspond to a tiny fraction of the actual genomic
+ content in the sample. The large size of data sets and low coverage make the assessment of microbial 
+ diversity in complex samples even harder. With novel applications of data structures and the development 
  of novel algorithms, my research provides the necessary and highly desired computational methods to enable 
  scalable microbial diversity analysis of the complex metagenomes, with further potential to facilitate other analysis like assembly, annotation.
 
 
- In the past several years, I have helped starting and participated in an effort to develop the khmer software package 
- (\url{https://github.com/ged-lab/khmer}), for fast and memory efficient online counting of k-mers in sequencing data sets. 
+ In the past several years, I have helped start and participated actively in an effort to develop the khmer software package 
+ (\url{https://github.com/ged-lab/khmer}), to enable fast and memory efficient k-mer-based analysis of sequencing data sets. 
  Unlike previous methods based on data structures such as hash tables, suffix arrays, and trie structures, khmer relies 
  entirely on a simple probabilistic data structure, a Count-Min Sketch. The Count-Min Sketch permits online updating and retrieval of k-mer counts in memory which is necessary to support online k-mer analysis algorithms. On sparse data sets this data structure is considerably more 
  memory efficient than any exact data structure.
@@ -67,7 +67,7 @@ samples, all of which are crucial to draw insightful and reliable conclusion. Si
    k-mers in metagenomes for diversity analysis. Now khmer has been widely used for many other purposes, from  
    enabling large scale de novo metagenome assembly  to sequencing error detection and correction.
   
- Based on the efficient k-mer counting package khmer, I helped developing digital normalization, which is a single-pass 
+ Based on the efficient k-mer counting package khmer, I helped develop digital normalization, a single-pass 
  computational algorithm that systematizes coverage in shotgun sequencing data sets, thereby decreasing sampling 
  variation, discarding redundant data, and removing the majority of errors. Digital normalization can substantially reduce 
  the size of shotgun data sets and decrease the memory and time requirements for de novo sequence assembly, 
@@ -75,32 +75,29 @@ samples, all of which are crucial to draw insightful and reliable conclusion. Si
  The algorithm of digital normalization has been used by many research groups to facilitate their analysis and has been 
  implemented in different tools like Trinity and  Illumina's TruSeq pipeline.
 
-Furthermore, I integrate efficient k-mer counting and a novel de Bruijn graph mapping method based on digital normalization 
+Furthermore, I integrated efficient k-mer counting and a novel de Bruijn graph mapping method based on digital normalization 
 to develop a new method to allow for scalable diversity analysis of large, complex metagenomes.  A novel concept - 
 IGS (informative genomic segment) is proposed to represent the 
 unique information in a metagenomics data set. The IGSs can be used as a complement of OTUs to be the cornerstone for 
 diversity analysis of whole shotgun metagenomics data sets. The abundance of IGSs in different samples can be 
-retrieved by mapping the reads to de Bruijn graph database. I have evaluated this method on multiple metagenomes from 
+retrieved by mapping the reads to de Bruijn graphs. I have evaluated this method on multiple metagenomes from 
 a variety of environments (e.g., human gut, human body part, soil in collaboration with James Tiedje, ballast water 
-viromes in collaboration with Joan Rose ). Given the velocity in growth of sequencing data, I believe that this method is 
-promising to highly diverse samples with relatively low computational requirements. Further, as they do not depend on 
-reference genomes, these methods also provide opportunities to tackle the large amounts of unknown "dark matter" we 
+viromes in collaboration with Joan Rose). Given the velocity in growth of sequencing data, I believe that this method is 
+promising for analyzing highly diverse samples with relatively low computational requirements. Further, as the method does not depend on 
+reference genomes, it also provides opportunities to tackle the large amounts of unknown "dark matter" we 
 find in metagenomic datasets.
 
-Generally I am strongly interested in developing and applying computational methods to guide large scale efforts of using 
+More generally I am strongly interested in developing and applying computational methods to guide large scale efforts using 
 sequencing technologies as a tool to answer biological questions. I am especially thrilled by the computational challenge 
 presented in the field of metagenomics. For all the methods I have been working on, like k-mer counting, de Bruijn graph 
-mapping, IGS diversity analysis, I have being working really hard to make them more efficient, more powerful, more scalable, 
-which has facilitated the metagenomic research in different ways. But there is still a long way to go while facing much bigger 
-metagenomic data sets and more complex metagenomic samples.  Going forward, I plan to integrate those methods I have
- been working on, with more powerful machine learning methods,  efficient data structures or algorithms to tackle more 
- problems in metagenomics, like  binning approaches, functional annotation, and phylogenetic analysis,  in an efficient , 
-  powerful and  scalable way, as well.  These problems are excellent examples to represent the computational 
- challenges in biological research. Working on these problems can help microbial ecologist as well as all humanity to acquire 
- more knowledge about the microbial world, it can also demonstrate  the power of efficient computational approaches to 
+mapping, IGS diversity analysis, I have been working hard to make them more efficient, more powerful, and more scalable, 
+which has facilitated metagenomic research in different ways. But there is still a long way to go as we face much bigger 
+metagenomic data sets and more complex metagenomic samples.  Going forward, I hope to integrate those methods with more powerful machine learning methods,  efficient data structures or algorithms to tackle more 
+ problems in metagenomics, such as binning approaches, functional annotation, and phylogenetic analysis,  in an efficient, 
+  powerful and scalable way, as well.  These problems are excellent examples that represent many of the core computational 
+ challenges in biological research. Working on these problems can help microbial ecologists as well as all humanity to acquire 
+ more knowledge about the microbial world, and it can also demonstrate the power of efficient computational approaches to 
  facilitate actual scientific research. 
-
-
 
 \raisebox{1cm}
 
